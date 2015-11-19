@@ -13,8 +13,6 @@
 		D3D230631BFA426A007AD39B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3D230611BFA426A007AD39B /* Main.storyboard */; };
 		D3D230651BFA426A007AD39B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3D230641BFA426A007AD39B /* Assets.xcassets */; };
 		D3D230681BFA426A007AD39B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3D230661BFA426A007AD39B /* LaunchScreen.storyboard */; };
-		D3D230711BFA487F007AD39B /* RRRouteMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D230701BFA487F007AD39B /* RRRouteMapViewController.m */; };
-		D3D230731BFA4A1F007AD39B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3D230721BFA4A1F007AD39B /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,9 +26,6 @@
 		D3D230641BFA426A007AD39B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D3D230671BFA426A007AD39B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D3D230691BFA426A007AD39B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D3D2306F1BFA487F007AD39B /* RRRouteMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RRRouteMapViewController.h; sourceTree = "<group>"; };
-		D3D230701BFA487F007AD39B /* RRRouteMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RRRouteMapViewController.m; sourceTree = "<group>"; };
-		D3D230721BFA4A1F007AD39B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,7 +33,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D3D230731BFA4A1F007AD39B /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,7 +42,6 @@
 		D3D2304C1BFA426A007AD39B = {
 			isa = PBXGroup;
 			children = (
-				D3D230721BFA4A1F007AD39B /* MapKit.framework */,
 				D3D230571BFA426A007AD39B /* RandomRoadtrip */,
 				D3D230561BFA426A007AD39B /* Products */,
 			);
@@ -69,8 +62,6 @@
 				D3D2305C1BFA426A007AD39B /* AppDelegate.m */,
 				D3D2305E1BFA426A007AD39B /* ViewController.h */,
 				D3D2305F1BFA426A007AD39B /* ViewController.m */,
-				D3D2306F1BFA487F007AD39B /* RRRouteMapViewController.h */,
-				D3D230701BFA487F007AD39B /* RRRouteMapViewController.m */,
 				D3D230611BFA426A007AD39B /* Main.storyboard */,
 				D3D230641BFA426A007AD39B /* Assets.xcassets */,
 				D3D230661BFA426A007AD39B /* LaunchScreen.storyboard */,
@@ -159,7 +150,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3D230601BFA426A007AD39B /* ViewController.m in Sources */,
-				D3D230711BFA487F007AD39B /* RRRouteMapViewController.m in Sources */,
 				D3D2305D1BFA426A007AD39B /* AppDelegate.m in Sources */,
 				D3D2305A1BFA426A007AD39B /* main.m in Sources */,
 			);
@@ -310,6 +300,7 @@
 				D3D2306E1BFA426A007AD39B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
