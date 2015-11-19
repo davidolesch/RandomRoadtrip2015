@@ -65,24 +65,7 @@
 }
 
 - (void)getAndDisplayTravelTime {
-    //create request
-    MKDirectionsRequest *request = [[MKDirectionsRequest alloc] init];
-    [request setSource:[[MKMapItem alloc] initWithPlacemark:self.origin]];
-    [request setDestination:[[MKMapItem alloc] initWithPlacemark:self.destination]];
-    [request setTransportType:MKDirectionsTransportTypeAutomobile];
-    
-    //send request
-    [[[MKDirections alloc] initWithRequest:request] calculateDirectionsWithCompletionHandler:^(MKDirectionsResponse *response, NSError *error) {
-        //handle request
-        MKRoute *route = [[response routes] firstObject];
-        double travelTimeInHours =[route expectedTravelTime] / 60 / 60;
-        
-        //prepare and show alert with driving time
-        NSString *title = [NSString stringWithFormat:@"%@ to %@",self.origin.locality,self.destination.locality];
-        NSString *message = [NSString stringWithFormat:@"Driving time is %.0f hours",travelTimeInHours];
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:title message:message delegate:nil cancelButtonTitle:@"ok" otherButtonTitles:nil];
-        [alert show];
-    }];
+   
 }
 
 @end
